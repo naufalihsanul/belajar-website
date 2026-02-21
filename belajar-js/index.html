@@ -16,13 +16,45 @@
         myPara.textContent = 'hai';
     </script> -->
 
-
+    <!-- 
     <p class="main"></p>
 
     <script>
         const myPara = document.querySelector(".main");
 
         myPara.innerHTML = 'haiii';
+    </script> -->
+
+
+    <!-- <p id="main">pal</p>
+
+    <script>
+        const myPara = document.getElementById('main').style.color = 'blue';
+    </script> -->
+
+    <!-- <p>tanggal berapa sekarang??</p>
+    <p id="tanggal"></p>
+
+    <button onclick="panggilTanggal()">lihat tanggal</button>
+
+
+    <script>
+        function panggilTanggal() {
+            const date = document.getElementById('tanggal');
+
+            date.innerHTML = new Date();
+        }
+
+
+    </script> -->
+    <button id="myBtn">Click buat lihat tanggal</button>
+    <p id="demo"></p>
+
+    <script>
+        const myBtn = document.getElementById('myBtn');
+        myBtn.addEventListener('click', function () {
+            document.getElementById('demo').innerHTML = new Date();
+        });
     </script>
 
 </body>
