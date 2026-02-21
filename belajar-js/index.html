@@ -47,14 +47,26 @@
 
 
     </script> -->
-    <button id="myBtn">Click buat lihat tanggal</button>
-    <p id="demo"></p>
+    <button id="myBtn">Click disini munculin nama saya</button>
+
+    <p id="nama"></p>
 
     <script>
         const myBtn = document.getElementById('myBtn');
-        myBtn.addEventListener('click', function () {
-            document.getElementById('demo').innerHTML = new Date();
-        });
+
+        function panggilNama() {
+            let nama = document.getElementById('nama');
+
+            if (nama.innerHTML === '') {
+                nama.innerHTML = 'nopal';
+
+            } else {
+                nama.innerHTML = '';
+            }
+
+
+        }
+        myBtn.addEventListener('click', panggilNama);
     </script>
 
 </body>
